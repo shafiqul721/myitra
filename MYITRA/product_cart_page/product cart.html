@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cart - Kota Cantik</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+    <div class="container-fluid px-4">
+      <a class="navbar-brand" href="#"><img src="MYITRA_Logo-removebg-preview 1..jpeg" alt="Kota Cantik logo" class="nav-logo" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Stories</a></li>
+          <li class="nav-item"><a class="nav-link" href="../Product catalog page/product catalog.html">Catalog</a></li>
+          <li class="nav-item"><a class="nav-link" href="../Contact us page/contact us.html">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><img src="CART2.svg" alt="Cart" class="nav-icon" /></a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><img src="search2.svg" alt="Search" class="nav-icon" /></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Cart Section -->
+  <section class="container my-5">
+    <h2 class="fw-bold text-center mb-4">Your Cart</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="mini-box p-4">
+          <div class="d-flex align-items-center mb-3">
+            <img src="Kota_Cantik.png" alt="Kota Cantik" class="kota-img me-3" />
+            <div>
+              <h4 class="fw-bold mb-1">Kota Cantik</h4>
+              <p class="mb-1">Includes:</p>
+              <ul class="list-unstyled mb-2">
+                <li>Sanitary Pads</li>
+                <li>Hair Shampoo</li>
+                <li>Toothbrush</li>
+                <li>Toothpaste</li>
+                <li>Bar Soap</li>
+              </ul>
+              <div class="price">RM15.00</div>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-between align-items-center">
+            <div>
+              <label for="quantity" class="me-2 fw-bold">Quantity:</label>
+              <input type="number" id="quantity" class="form-control d-inline-block w-auto" value="1" min="1" />
+            </div>
+            <button class="btn btn-danger" id="deleteBtn">Delete Item</button>
+          </div>
+
+          <hr class="my-4" />
+
+<div class="text-center">
+  <p class="fw-bold mb-1">Quantity: <span id="finalQty">1</span></p>
+  <p class="fw-bold fs-4">Total: RM <span id="totalPrice">15.00</span></p>
+  <input type="text" class="form-control mb-3 mt-3" placeholder="Enter Promo Code" />
+  
+  <div class="d-grid gap-2">
+<button class="custom-green-btn btn-fixed-size" id="proceedToCheckoutBtn">
+  Proceed to Checkout
+</button>
+    <button class="custom-orange-btn btn-fixed-size" onclick="window.location.href='../Product detail/product detail.html'">
+      Product Page
+    </button>
+  </div>
+</div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row text-center text-md-start">
+        <div class="col-md-4 mb-3">
+          <img src="MYITRA_Logo-removebg-preview 1..jpeg" alt="Kota Cantik logo" class="footer-logo mb-2" />
+          <p>All rights reserved.</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>QUICK LINKS</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Stories</a></li>
+            <li><a href="../Product catalog page/product catalog.html">Catalog</a></li>
+            <li><a href="../Contact us page/contact us.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>Contact Us</h5>
+          <p>MyHero Social Organization Sdn. Bhd., Malaysia</p>
+          <p>Email: myherosocial@gmail.com</p>
+          <p>Phone: +6011-12345678</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+/* General Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  padding-top: 80px; /* offset for fixed navbar */
+  background-color: #fdf9c5;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #476252;
+}
+.navbar-brand {
+  color: #000000 !important;
+  font-weight: bold;
+}
+.navbar-nav {
+  flex: 1;
+  justify-content: space-around;
+}
+.nav-link {
+  color: #000 !important;
+  font-weight: 600;
+  border-bottom: 3px solid transparent;
+}
+.nav-link:hover,
+.nav-link.active {
+  color: #fdf9c5 !important;
+  border-bottom-color: #fdf9c5;
+}
+.nav-logo {
+  max-height: 40px;
+  object-fit: contain;
+}
+.nav-icon {
+  height: 24px;
+  width: auto;
+  margin-top: -4px;
+}
+.nav-icon path {
+  fill: #FDF9C5;
+}
+
+/* Mini Boxes */
+.mini-box {
+  border-radius: 10px;
+  border: 2px solid #000;
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  background-color: #fdf9c5;
+}
+.mini-box h4 {
+  color: #000000;
+}
+
+/* Custom Green Button */
+.custom-green-btn {
+  background: linear-gradient(135deg, #74E835, #41821E);
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  font-weight: 700;
+  font-family: 'Outfit', sans-serif;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.custom-green-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Fixed Button Size */
+.btn-fixed-size {
+  width: 240px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+/* Form Inputs */
+input[type="text"],
+input[type="number"] {
+  border-radius: 6px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Footer */
+footer {
+  background-color: #476252;
+  color: #fff;
+  padding: 50px 20px;
+}
+footer h5 {
+  color: #fff;
+  font-weight: bold;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+.footer-logo {
+  height: 100px;
+  width: auto;
+  object-fit: contain;
+}
+
+.kota-img {
+  max-height: 160px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.summary-breakdown {
+  background-color: #fff8dc;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.shipping-box {
+  background-color: #5BC200;
+  color: #000;
+}
+
+.shipping-box .form-label {
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+
+.form-select {
+  border-radius: 6px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.payment-box {
+  background-color: #5BC200;
+  color: #000;
+}
+
+.payment-box .form-label {
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
