@@ -34,10 +34,11 @@ signupBtn.addEventListener("click", async () => {
         alert("Account created successfully! Check your email to confirm.");
 
         // Redirect to login page
-        window.location.href = "../login_page/login.html";
+        window.location.href = "../login_page/index.html";
 
     } catch (err) {
         console.error(err);
         alert("Something went wrong. Please try again.");
     }
 });
+
