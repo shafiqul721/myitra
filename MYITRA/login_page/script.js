@@ -51,6 +51,7 @@ document.getElementById('login-form').addEventListener('submit', async function 
     alert("Logged in successfully!");
 
     // REDIRECT TO HOME PAGE
-    window.location.href = "../home_page/index.html";
+    window.location.href = "../home_page/home_page.html";
 });
+
 
