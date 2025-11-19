@@ -1,10 +1,12 @@
-// 1️⃣ Check if Supabase sent a confirmation token in the URL
+// login_page/login.js
+import { supabase } from "../js/supabase-init.js";
+
+// 1️⃣ CHECK EMAIL CONFIRMATION TOKEN (KEEPING YOUR EXISTING FEATURE)
 const hashToken = window.location.hash.replace("#token=", "");
 
 if (hashToken) {
     console.log("Email confirmation token:", hashToken);
 
-    // Complete the email confirmation
     supabase.auth.verifyOtp({
         token_hash: hashToken,
         type: "signup"
@@ -20,15 +22,21 @@ if (hashToken) {
     });
 }
 
-
-// 2️⃣ Normal Login Form
+// 2️⃣ NORMAL LOGIN FORM — WITH NAME FIELD INCLUDED (FORMALITY)
 document.getElementById('login-form').addEventListener('submit', async function (e) {
     e.preventDefault();
 
-    const email = document.getElementById('email').value;
+    const name = document.getElementById("name").value.trim(); // <-- KEEPING NAME
+    const email = document.getElementById('email').value.trim();
     const password = document.getElementById('password').value;
 
-    // Login using Supabase
+    // CHECK ALL FIELDS (FORMALITY)
+    if (!name || !email || !password) {
+        alert("Please fill all fields including your name!");
+        return;
+    }
+
+    // LOGIN USING SUPABASE
     const { data, error } = await supabase.auth.signInWithPassword({
         email,
         password
@@ -41,9 +49,8 @@ document.getElementById('login-form').addEventListener('submit', async function 
     }
 
     alert("Logged in successfully!");
-    console.log("Session:", data);
 
-    // Redirect to home page after login (customize this)
+    // REDIRECT TO HOME PAGE
     window.location.href = "../home_page/index.html";
 });
 
